@@ -86,12 +86,12 @@ Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante so
 </ul> </div>
 </div>
 <!-- /.row --> </div>
-<!-- Side Widget Well -->
 
-  
+<!-- Side Widget Well -->
       <div class="well">
         <h4>Recent Posts</h4>
         <% @articles.each do |article| %>
+        Created by: <%= article.user.username %><br />
           <strong><%= link_to article.title, article %></strong>
           <p><%= truncate(article.body) %></p>
         <% end %>
