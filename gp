@@ -1,4 +1,4 @@
 git add -A
-git commit -m "fixed typo (setup -> smtp) in mail.rb"
+git commit -m "changed email reset password was sent fromt"
 git push origin master
 git push heroku master
